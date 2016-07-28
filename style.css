@@ -1,0 +1,322 @@
+body {
+	background: brown;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	width: 80%;
+	max-width: 700px;
+	background-color: #fff;
+	padding: 20px;
+	margin: 25px auto;	
+	border: 2px solid #231E00;
+	background: #B29F36;
+}
+	
+.row {
+	display: flex;
+	margin: 0;
+	justify-content: space-around;
+	margin-top: 50px;	
+}
+
+/* === SECTIONS === */ 	
+/*Section 1 styles*/
+
+.btn1 {
+	display: inline-flex;
+	margin: 4px 5px;
+	padding: 15px 30px;
+	width: 160px;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-transition: 0.4s; 
+	transition: 0.4s;
+	background-color: inherit
+	border: 10px solid;
+}
+	
+.btn-purple {
+	background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
+	border: 2px solid #8e44ad;
+	background-position: 100% 0;
+	background-size: 300%;
+}
+
+.btn-yellow {
+	background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+	border: 2px solid #f1c40f;
+	background-position: 100% 0;
+	background-size: 300%;	
+}
+
+.btn-blue {
+	background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
+	border: 2px solid #3498db;
+	background-position: 100% 0;
+	background-size: 300%;
+}
+
+.btn1:hover {
+	background-position: 0 100%;
+	color: #fff;
+}
+
+/* === SECTIONS === */
+/*Section 2 styles*/
+
+.star8 {
+	margin: 2em;
+	transform: rotate(23deg);
+	transition: background linear .3s;
+}
+
+.star8:before {
+	background: white;
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -8px;
+	transform: rotate( -45deg);
+}
+	
+.star8, .star8:before, .star {
+	height: 80px;
+	width: 80px;
+}
+	
+.gold, .gold:before {
+	border: 6px solid #ffc107;
+}
+
+.blue, .blue:before {
+	border: 6px solid #3fb0ac;
+}
+
+.orange, .orange:before {
+	border: 6px solid #fd7e33;	
+}
+
+ .gold:hover:before, .gold:hover, .gold:hover .star {
+	background: #ffc107;
+	transition: ease-in-out .3s;
+	color: white;
+}
+
+.orange:hover:before, .orange:hover, .orange:hover .star   {
+	background: #fd7e33;
+	transition: ease-in-out .3s;
+	color: white;
+}
+	
+ .blue:hover:before, .blue:hover, .blue:hover .star  {
+	background: #3fb0ac;
+	transition: ease-in-out .3s;
+	color: white;
+}
+
+.star {
+	margin: 0;
+	position: absolute;
+	background: black;
+	font-size: 60px;
+	color: black;
+	background: white;	
+}
+
+ .star:before {
+	position: absolute;
+	margin: 10px;
+	transform: rotate(-22deg);
+}
+
+/* === SECTIONS === */ 	
+/*Section 3 styles*/
+
+.social {
+	margin: 30px auto;
+	width: 500px;
+	padding: 50px;
+	text-align: center;	
+	background: grey;
+	
+
+}
+
+h2 {
+	color: #505050;
+	font-size: 40px;
+}
+
+
+.icon-btn {
+	float: center;
+	height: 75px;
+	width: 75px;
+	border: 0;
+	margin: 10px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 75px;
+	border-radius: 45px;
+	background: white;
+	display: inline-block;
+	
+}
+	
+.icon-btn:hover {
+	transform: scale(1.20);
+	color: #FFFFFF;	
+	transition: 0.2s;
+}
+
+ .twitter {
+ 	color: #4099FF;
+ }
+ 
+ .twitter:hover {
+ 	background: #4099FF;
+ 	color: #FFFFFF;		
+ }
+ 
+ .google {
+ 	color: #DB5A3C;
+ }
+ 
+.google:hover {
+	background: #DB5A3C;
+	color: #FFFFFF;	
+}
+
+.facebook {
+	color: #3B5998;	
+}
+
+.facebook:hover {
+	background: #3B5998;
+	color: #FFFFFF;	
+}
+
+.instagram {
+	color: #5C3D2E;
+}
+
+.instagram:hover {
+	background: #5C3D2E;
+	color: #FFFFFF;	
+}
+
+.github {
+	color: #4183C4; 
+}
+
+.github:hover {
+	background: #4183C4;
+	color: #FFFFFF;	
+}
+a {text-decoration: none;
+ 
+}
+
+.link {
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	font-size: .1px;
+	display: block;
+	height: 75px;
+	width: 75px;
+	border-radius: 45px;
+	}
+	
+	
+/* === SECTIONS === */ 	
+/*Section 4 styles*/
+
+#menu {
+	list-style-type:none;
+    margin:30px auto;
+    padding:0;
+    height:64px;
+    width:380px;
+    background-color:brown;
+} 
+
+#menu li {
+    float:left;
+     margin-left:15px;
+}
+
+#menu li:first-child {
+    margin-left:0px;
+}
+
+#menu li a {
+    display:block;
+    width:64px;
+    height:64px;
+    background-color:brown;
+    background-image:url('http://webkod.pl/img/all_icons.png');
+    text-indent:-99999px;     
+}
+      
+#menu #wikipedia a {
+	}
+#menu #rss a { 
+	background-position:-128px 0;
+}
+#menu #facebook a {
+	background-position:-256px 0;
+}
+#menu #share a { 
+	background-position:0 -64px;
+}
+#menu #twitter a { 
+	background-position:-128px -64px;
+}
+#menu #wikipedia a:hover { 
+	background-position:-64px 0; 
+}
+#menu #rss a:hover {
+	background-position:-192px 0
+}
+#menu #facebook a:hover {
+	background-position:-320px 0;
+}
+#menu #share a:hover { 
+	background-position:-64px -64px; 
+}
+#menu #twitter a:hover { 
+	background-position:-192px -64px;
+}
+
+    /* === SECTIONS === */ 	
+/*Section 5 styles*/  
+ footer a:hover {
+	color: #2980b9;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 3px;
+  background: #262626;
+}
+
+footer p {
+  text-align: center;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: #e60073;
+  font-weight: bold;
+} 
+
+footer a:hover {
+	color: #2980b9;
+}   
